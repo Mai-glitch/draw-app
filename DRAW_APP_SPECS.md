@@ -1,3 +1,4 @@
+
 # But de l'application
 
 Application qui s'execute dans le navigateur sur ordinateur de bureau et mobiles.
@@ -24,7 +25,7 @@ Sur la page d'édition, on peut:
 
 # Détails techniques de l'application
 
-Faire une application frontend Angular utilisant Angular-cli et en s'aidant du MCP Angular dispo ici https://angular.dev/ai/mcp
+Faire une application frontend Angular utilisant Angular-cli et en s'aidant du MCP Angular
 
 ## Framework Angular
 
@@ -56,3 +57,8 @@ Faire une application frontend Angular utilisant Angular-cli et en s'aidant du M
 
 - Faire des tests unitaires Vitest sur tous les composants et les stores. 
 - Faire des tests E2E Playright sur les fonctionnalitées principales. 
+
+## GitHub / Deploy
+
+- l'application doit être disponible sur GitHub Pages et refleter la branche 'main' en s'aidant du MCP GitHub
+- les modifications doivent passer par des merge requests avec un CI qui execute les tests unitaires Vitest et E2E Playright
