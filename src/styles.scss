@@ -1,0 +1,169 @@
+// Tailwind imports
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Material theme customization
+@use '@angular/material' as mat;
+
+// Define funky color palettes
+$primary-palette: (
+  50: #fff7ed,
+  100: #ffedd5,
+  200: #fed7aa,
+  300: #fdba74,
+  400: #fb923c,
+  500: #f97316,
+  600: #ea580c,
+  700: #c2410c,
+  800: #9a3412,
+  900: #7c2d12,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  )
+);
+
+$accent-palette: (
+  50: #fdf4ff,
+  100: #fae8ff,
+  200: #f0abfc,
+  300: #e879f9,
+  400: #d946ef,
+  500: #c026d3,
+  600: #a21caf,
+  700: #86198f,
+  800: #701a75,
+  900: #4a044e,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  )
+);
+
+// Create theme
+$primary: mat.define-palette($primary-palette);
+$accent: mat.define-palette($accent-palette);
+$warn: mat.define-palette(mat.$red-palette);
+
+$light-theme: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0,
+));
+
+$dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0,
+));
+
+// Include theme for all components
+@include mat.all-component-themes($light-theme);
+
+.dark {
+  @include mat.all-component-colors($dark-theme);
+}
+
+// Base styles
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+// Canvas styles
+canvas {
+  touch-action: none;
+  cursor: crosshair;
+}
+
+// Utility classes
+.glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.gradient-warm {
+  background: linear-gradient(135deg, #f97316 0%, #d946ef 100%);
+}
+
+.gradient-cool {
+  background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+}
+
+// Animation keyframes
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.draw-animation {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 2s ease-in-out forwards;
+}

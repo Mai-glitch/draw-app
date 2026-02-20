@@ -1,3 +1,4 @@
+Tu es un ingénieur logiciel expert utilisant Kimi K2.5 en mode Thinking et agentique. Crée une application complète basée sur les specs suivantes:
 
 # But de l'application
 
@@ -62,3 +63,7 @@ Faire une application frontend Angular utilisant Angular-cli et en s'aidant du M
 
 - l'application doit être disponible sur GitHub Pages et refleter la branche 'main' en s'aidant du MCP GitHub
 - les modifications doivent passer par des merge requests avec un CI qui execute les tests unitaires Vitest et E2E Playright
+
+
+
+Utilise des outils pour raisonner étape par étape, déboguer, et coordonne un swarm d'agents si la tâche est massive. Output uniquement le code et les explications nécessaires.

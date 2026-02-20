@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+*.tgz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+coverage/
+playwright-report/
+test-results/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Angular
+.angular/
+
+# Logs
+logs/
+*.log
+
+# Operating System Files
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# ESLint cache
+.eslintcache
+
+# Vitest
+html/

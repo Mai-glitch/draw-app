@@ -1,0 +1,52 @@
+{
+  "header": {
+    "toggleTheme": "Toggle theme",
+    "toggleLanguage": "Toggle language"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "clear": "Clear",
+    "add": "Add",
+    "save": "Save",
+    "confirm": "Confirm",
+    "close": "Close"
+  },
+  "gallery": {
+    "title": "Welcome to DrawApp",
+    "subtitle": "Create, edit, and save your beautiful drawings. Everything is stored locally on your device!",
+    "newDrawing": "New Drawing",
+    "yourDrawings": "Your Drawings",
+    "deleteAll": "Delete All",
+    "deleteTitle": "Delete Drawing",
+    "deleteMessage": "Are you sure you want to delete this drawing? This action cannot be undone.",
+    "deleteAllTitle": "Delete All Drawings",
+    "deleteAllMessage": "Are you sure you want to delete all your drawings? This action cannot be undone.",
+    "open": "Open",
+    "delete": "Delete this drawing",
+    "empty": {
+      "title": "No drawings yet",
+      "description": "Start by creating your first drawing! Click the button above to get started."
+    }
+  },
+  "editor": {
+    "back": "Back to gallery",
+    "drawingName": "Drawing name",
+    "save": "Save",
+    "tools": {
+      "brush": "Brush",
+      "eraser": "Eraser",
+      "text": "Text",
+      "image": "Image"
+    },
+    "color": "Color {{color}}",
+    "customColor": "Custom color",
+    "undo": "Undo",
+    "clear": "Clear canvas",
+    "clearTitle": "Clear Drawing",
+    "clearMessage": "Are you sure you want to clear the entire drawing? This action cannot be undone.",
+    "addText": "Add Text",
+    "textPlaceholder": "Enter your text here...",
+    "saved": "Drawing saved successfully"
+  }
+}
