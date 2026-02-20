@@ -1,4 +1,4 @@
-Tu es un ingénieur logiciel expert utilisant Kimi K2.5 en mode Thinking et agentique. Crée une application complète basée sur les specs suivantes:
+Tu es un ingénieur logiciel expert. Crée une application complète basée sur les specs suivantes:
 
 # But de l'application
 
@@ -19,14 +19,14 @@ Sur la page d'édition, on peut:
 
 # Style graphique de l'application
 
-- L'application doit être dans le thème funky avec des couleurs chaudes qui se marient bien entre elles
+- L'application doit être dans le style funky avec des couleurs chaudes qui se marient bien entre elles
 - Il doit y avoir un thème dark et un light
-- L'application doit être responsive et fonctionnelle sur mobiles
+- L'application doit être responsive
 - L'application doit être dispo en français et anglais
 
 # Détails techniques de l'application
 
-Faire une application frontend Angular utilisant Angular-cli et en s'aidant du MCP Angular
+Faire une application frontend Angular 21 utilisant le cli d'angular (`ng new`)
 
 ## Framework Angular
 
@@ -38,7 +38,6 @@ Faire une application frontend Angular utilisant Angular-cli et en s'aidant du M
 
 - `@angular/material` pour composants UI
 - `@ngrx/signals` pour gérer les données
-- `lodash-es` pour algo de traitements de données
 - `tailwindcss` pour le layout et le style
 - `@jsverse/transloco` pour gérer les langues qui seront chargées a partir de fichiers JSON
 
@@ -62,8 +61,3 @@ Faire une application frontend Angular utilisant Angular-cli et en s'aidant du M
 ## GitHub / Deploy
 
 - l'application doit être disponible sur GitHub Pages et refleter la branche 'main' en s'aidant du MCP GitHub
-- les modifications doivent passer par des merge requests avec un CI qui execute les tests unitaires Vitest et E2E Playright
-
-
-
-Utilise des outils pour raisonner étape par étape, déboguer, et coordonne un swarm d'agents si la tâche est massive. Output uniquement le code et les explications nécessaires.
